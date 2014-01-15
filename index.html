@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Conversion Tutorial</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+</head>
+<body>
+   <SCRIPT language=JavaScript>
+<!--
+function uzoiro(amount)
+{
+    var target_amount = amount/0.702804;
+    var target_Type = 'oiro';
+    var target_cellid = 'eur';
+    document.forms[target_Type].elements[target_cellid].value = Math.round(target_amount * 100) / 100;
+    
+}
+function uzlatiem(amount)
+{
+    var target_amount = amount*0.702804;
+    var target_Type = 'oiro';
+    var target_cellid = 'lvl';
+    document.forms[target_Type].elements[target_cellid].value = Math.round(target_amount * 100) / 100;
+}
+-->
+</SCRIPT>
+
+     <form name=oiro>
+<input name=lvl size=7 value='0.00 LVL' onkeyup="uzoiro(this.value);" onfocus="this.value='';" style='text-align: center;'>=<input name=eur value='0.00 EUR' size=7 onKeyUp="uzlatiem(this.value);" onfocus="this.value='';" style='text-align: center;'>
+</form>
+</body>
+</html>
